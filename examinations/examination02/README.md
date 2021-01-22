@@ -1,10 +1,10 @@
 ## Examination assignment 2
 
-In this assignment, we are going to implement a web-API following the theory of REST. We encourage you to have your own ideas about the API service to build. Maybe you have some idea you want to start with trough an API driven design? For those of you without any ideas, we will present a scenario below. That will also give a hint of the extent of this assignment.
+In this assignment, we are going to implement a web-API following the theory of REST. We encourage you to have your own ideas about the API service to build. Maybe you have some idea you want to start with trough an API driven design? For those of you without any ideas, we present a scenario below. That will also give a hint of the extent of this assignment.
 
 ## Overall requirements
 
-We will emit obvious requirements like error handling, security, good code structure, accessible through HTTP/HTTPS, and so on. Of course, you will implement that without us telling you to! Below are some requirements for this assignment; either you choose your own implementation or use our suggestion. You are free to choose technical solutions like frameworks and modules for solving this assignment as long as the examiners could test your solution easily.
+Obviously you will be expected to have error handling, security, good code structure, accessible through HTTP/HTTPS, and so on. Below are two sets of requirements for this assignment. You must fulfil all the "mandatory" requirements and at least FIVE linguistic design rules in order to PASS the project for Web APIs module. The "linguistic design rules" are introduced in the lectures. Watch them! You are free to choose your own implementation or use our proposed suggestion. You are free to choose any frameworks, libraries, and modules for solving this assignment as long as the examiners could test your solution easily.
 
 * The API should at least support representations with application/json
 * The API should try to follow the constraints for Restful APIs
@@ -19,12 +19,30 @@ We will emit obvious requirements like error handling, security, good code struc
 * The code should be individually created, the examiners may run a code anti-plagiarism tool on your code. Plagiarism will be reported.
 * Make a script-file that automatically populated your application with some data for testing
 
+## Linguistic design rules (linguistic design quality of your API):
+
+* rule 1: Forward slash separator (/) must be used to indicate a "hierarchical relationship".
+* rule 2: A trailing forward slash (/) should not be included in URIs.
+* rule 3: Hyphens (-) should be used to improve the readability of URIs.
+* rule 4: Underscores (_) should not be used in URIs.
+* rule 5: Lowercase letters should be preferred in URI paths.
+* rule 6: File extensions should not be included in URIs.
+* rule 7: A "singular" noun should be used for document names.
+* rule 8: A "plural" noun should be used for collection names.
+* rule 9: A plural noun should be used for store names.
+* rule 10: CRUD function names or their synonyms should not be used in URIs.
+* rule 11: A verb or verb phrase should be used for controller names.
+* rule 12: The query component of a URI may be used to filter collections or stores.
+* rule 13: The query component of a URI should be used to paginate collection or store results.
+
 ## Our suggestion for those without own ideas
 
-The fishing club "Den svartmunnade smörbultens banne" needs an API for collection fishing reports. They are thinking of building a client application but want a separate web API before taking this process along. The idea is that fishers should be able to report their catch and that this data could be made public. They want to collect data like:
+The fishing club "LNU Fishing Club" needs an API for the collection of fishing reports. They are thinking of building a client application but want a separate web API before taking this process along. The idea is that fishers should be able to report their catch and that this data should be made public. They want to collect data like:
 
 * The user which catches the fish
 * The position (longitude and latitude) of the catch
+* The name of the lake/river
+* The city of fishing spot
 * Specie of the fish
 * Weight
 * Length
@@ -45,20 +63,21 @@ The following questions should be answered in the report.
 1. Explain and defend your implementation of HATEOAS in your solution.
 2. If your solution should implement multiple representations of the resources. How would you do it?
 3. Motivate and defend your authentication solution. 
- 1. What other authentication solutions could you implement?
- 2. What pros/cons do this solution have?
+ 3a. What other authentication solutions could you implement?
+ 3b. What pros/cons do this solution have?
 4. Explain how your webhook works.
 5. Since this is your first own web API, there are probably things you would solve in another way, looking back at this assignment. Write your thoughts about this.
-6. Did you do something extra besides the fundamental requirements? Explain them.
+6. Which "linguistic design rules" you implemented? List them here and motivate "for each" of them very briefly why you chose them? Remember that you must consider "at least" FIVE "linguistic design rules" as the linguistic quality of your API.
+7. Did you do something extra besides the fundamental requirements? Explain them.
 
 ## Examination
 
-The grade for this assignment is F(fail), Fx(fail, with options to complement), and P(pass). We will take note of your effort and give you grades like P-, P, or P+ that could affect your final grade on this course. 
-We will look at the structure of the API and the code, how easy your API is to understand, the extent of your effort, and the easiness for the examiner to test your solution.
+The grade for this assignment is F (fail), Fx (fail, with options to improve), and P (pass). We will take note of your effort and give you grades like P-, P, or P+ that could affect your final grade on this course. 
+We will look at the "linguistic design" and "structure" of the API and the code, how easy your API is to understand, the extent of your effort, and the easiness for the examiner to test your solution.
 
 ### Hand in of the assignment
 
-To hand in the assignment, you should finish a RELEASE.md-file in your project. Make sure you are in the root folder of your examination repository. Add the release-file by doing:
+To hand in the assignment, you should finish a RELEASE.md file in your project. Make sure you are in the root folder of your examination repository. Add the release-file by doing:
 
 * `wget https://gitlab.lnu.se/1dv527/content/examination-projects/examination-2-template/raw/master/RELEASE.md`
 
@@ -66,8 +85,8 @@ Edit the file, and make sure you commit it and push it to GitLab.
 
 ## Tips
 
-* Start by making a plan on how to solve the assignment. What do you have to do? What steps do you have to take? What do you need to know and learn? Plan your work!
+* Start by making a plan on how to solve the assignment. What do you have to do? What steps do you have to take? What do you need to know and learn? Plan your work and plan early!
 * Start with your resources/models. Create them and write a seed-script that fill your storage with some data to play with when testing your API.
-* Don't spend time on over-doing validation rules. In a real scenario, we should, but in this assignment, the API is the most important.
+* Do not spend time on over-doing validation rules. In a real scenario, we should, but in this assignment, the API is the most important.
 * Maybe a simple client application will help you to develop a good API, especially with respect to HATEOAS.
-* Learning and using POSTMAN/Newman is your own responsibility. Make sure to read the article: https://scotch.io/tutorials/write-api-tests-with-postman-and-newman
+* Learning and using POSTMAN/NEWMAN is your own responsibility. Make sure to read the article: https://scotch.io/tutorials/write-api-tests-with-postman-and-newman
