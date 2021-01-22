@@ -5,8 +5,11 @@ In this assignment, we are going to implement a web-API following the theory of 
 ## Overall requirements:
 
 Obviously you will be expected to have error handling, security, good code structure, accessible through HTTP/HTTPS, and so on. Below are two sets of requirements for this assignment. You must fulfil all the "mandatory" requirements and at least FIVE linguistic design rules in order to PASS the project for Web APIs module. The "linguistic design rules" are introduced in the lectures. Watch them! You are free to choose your own implementation or use our proposed suggestion. You are free to choose any frameworks, libraries, and modules for solving this assignment as long as the examiners could test your solution easily.
+<<<<<<< HEAD
 
 ## Mandatory requirements:
+=======
+>>>>>>> b5950777ac8b9e58053e614bc34956e9878d9bdb
 
 * The API should at least support representations with application/json
 * The API should try to follow the constraints for Restful APIs
@@ -36,15 +39,25 @@ Obviously you will be expected to have error handling, security, good code struc
 * rule 11: A verb or verb phrase should be used for controller names.
 * rule 12: The query component of a URI may be used to filter collections or stores.
 * rule 13: The query component of a URI should be used to paginate collection or store results.
+<<<<<<< HEAD
 
 ## Our suggestion for those without own ideas:
 
+=======
+
+## Our suggestion for those without own ideas
+
+>>>>>>> b5950777ac8b9e58053e614bc34956e9878d9bdb
 The fishing club "LNU Fishing Club" needs an API for the collection of fishing reports. They are thinking of building a client application but want a separate web API before taking this process along. The idea is that fishers should be able to report their catch and that this data should be made public. They want to collect data like:
 
 * The user which catches the fish
 * The position (longitude and latitude) of the catch
 * The name of the lake/river
+<<<<<<< HEAD
 * The city of fishing
+=======
+* The city of fishing spot
+>>>>>>> b5950777ac8b9e58053e614bc34956e9878d9bdb
 * Specie of the fish
 * Weight
 * Length
@@ -70,10 +83,19 @@ The following questions should be answered in the report.
 4. Explain how your webhook works.
 5. Since this is your first own web API, there are probably things you would solve in another way, looking back at this assignment. Write your thoughts about this.
 6. Which "linguistic design rules" you implemented? List them here and motivate "for each" of them very briefly why you chose them? Remember that you must consider "at least" FIVE "linguistic design rules" as the linguistic quality of your API.
+<<<<<<< HEAD
 
 ## Examination
 
 The grade for this assignment is F (fail), Fx (fail, with options to improve), and P (pass). We will take note of your effort and give you grades like P-, P, or P+ that could affect your final grade on this course. We will look at the "linguistic design" and "structure" of the API and the code, how easy your API is to understand, the extent of your effort, and the easiness for the examiner to test your solution.
+=======
+7. Did you do something extra besides the fundamental requirements? Explain them.
+
+## Examination
+
+The grade for this assignment is F (fail), Fx (fail, with options to improve), and P (pass). We will take note of your effort and give you grades like P-, P, or P+ that could affect your final grade on this course. 
+We will look at the "linguistic design" and "structure" of the API and the code, how easy your API is to understand, the extent of your effort, and the easiness for the examiner to test your solution.
+>>>>>>> b5950777ac8b9e58053e614bc34956e9878d9bdb
 
 ### Hand in of the assignment
 
